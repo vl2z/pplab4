@@ -60,7 +60,14 @@ public class Triangle implements Shape{
     }
 
     @Override
+    public String ToString() {
+        return super.toString() + "\t" + "area=" + this.area() + "perimeter=" + this.perimeter();
+    }
+
+
+    @Override
     public double perimeter() {
         return a+b+c;
     }
+
 }
