@@ -23,6 +23,6 @@ public class Rhombus implements Shape {
 
     @Override
     public String ToString() {
-        return super.toString() + "\t" + "area=" + this.area() + "perimeter=" + this.perimeter();
+        return super.toString() + "\t" + "area rhombus=" + this.area() + "perimeter rhombus=" + this.perimeter();
     }
 }
