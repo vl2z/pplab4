@@ -2,7 +2,7 @@
  * Created by IKZN on 07.04.2015.
  */
 public class Circle implements Shape{
-    int r;
+    double r;
 
 
     public Circle(int r) {
@@ -17,5 +17,10 @@ public class Circle implements Shape{
     @Override
     public double area() {
         return Math.PI*r*r;
+    }
+
+    @Override
+    public String ToString() {
+        return "\t" + "area circle = " + this.area() + " ; perimeter circle = " + this.perimeter();
     }
 }
