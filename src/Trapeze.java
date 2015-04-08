@@ -26,6 +26,6 @@ public class Trapeze implements Shape {
 
     @Override
     public String ToString() {
-        return " area trapeze= " + this.area() + " perimeter trapeze= " + this.perimeter();
+        return "\t" + " area trapeze= " + this.area() + " perimeter trapeze= " + this.perimeter();
     }
 }
