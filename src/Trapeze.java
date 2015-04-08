@@ -19,13 +19,13 @@ public class Trapeze implements Shape {
 
     @Override
     public double area() {
-        double p=(a+b+c+d)/2;
+        double p=(a+b+c+d)/2.0;
         double S=(a+b)*Math.sqrt((p-a)*(p-b)*(p-a-c)*(p-a-d))/(4*Math.abs(a-b));
         return S;
     }
 
     @Override
     public String ToString() {
-        return super.toString() + "\t" + "area trapeze=" + this.area() + "perimeter trapeze=" + this.perimeter();
+        return " area trapeze= " + this.area() + " perimeter trapeze= " + this.perimeter();
     }
 }
