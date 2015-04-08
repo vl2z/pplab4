@@ -24,7 +24,7 @@ public class Rhombus implements Shape {
     }
 
     @Override
-    public String ToString() {
+    public String toString() {
         return  "\t" + " area rhombus= " + this.area() + " perimeter rhombus= " + this.perimeter();
     }
 }

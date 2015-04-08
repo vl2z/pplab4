@@ -22,7 +22,7 @@ public class Rectangle implements Shape{
     }
 
     @Override
-    public String ToString() {
+    public String toString() {
         return "\t" + "area rectangle = " + this.area() + " ; perimeter rectangle = " + this.perimeter();
     }
 }

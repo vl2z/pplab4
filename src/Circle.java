@@ -20,7 +20,7 @@ public class Circle implements Shape{
     }
 
     @Override
-    public String ToString() {
+    public String toString() {
         return "\t" + "area circle = " + this.area() + " ; perimeter circle = " + this.perimeter();
     }
 }

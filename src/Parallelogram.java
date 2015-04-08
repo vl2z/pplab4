@@ -24,7 +24,7 @@ public class Parallelogram implements Shape {
     }
 
     @Override
-    public String ToString() {
+    public String toString() {
         return "\t" + " area parallelogramm= " + this.area() + " perimeter parallelogramm= " + this.perimeter();
     }
 }

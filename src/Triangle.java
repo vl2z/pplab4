@@ -62,7 +62,7 @@ public class Triangle implements Shape{
     }
 
     @Override
-    public String ToString() {
+    public String toString() {
         return "\t" + " area triangle = " + this.area() + "; perimeter triangle = " + this.perimeter();
     }
 
