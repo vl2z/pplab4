@@ -23,4 +23,9 @@ public class Trapeze implements Shape {
         double S=(a+b)*Math.sqrt((p-a)*(p-b)*(p-a-c)*(p-a-d))/(4*Math.abs(a-b));
         return S;
     }
+
+    @Override
+    public String ToString() {
+        return super.toString() + "\t" + "area=" + this.area() + "perimeter=" + this.perimeter();
+    }
 }
