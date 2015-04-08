@@ -18,4 +18,9 @@ public class Circle implements Shape{
     public double area() {
         return Math.PI*r*r;
     }
+
+    @Override
+    public String ToString() {
+        return super.toString() + "\t" + "area circle=" + this.area() + "perimeter circle=" + this.perimeter();
+    }
 }
