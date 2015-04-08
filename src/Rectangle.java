@@ -20,4 +20,9 @@ public class Rectangle implements Shape{
     public double area() {
         return a*b;
     }
+
+    @Override
+    public String ToString() {
+        return super.toString() + "\t" + "area rectangle=" + this.area() + "perimeter rectangle=" + this.perimeter();
+    }
 }
