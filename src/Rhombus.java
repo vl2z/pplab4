@@ -16,8 +16,10 @@ public class Rhombus implements Shape {
 
     @Override
     public double area() {
-        if(alpha!=0)
+        if(alpha!=0) {
+            alpha=(float)Math.toRadians(alpha);
             return a*a*Math.sin(alpha);
+        }
         else return a*h;
     }
 
