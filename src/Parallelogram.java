@@ -1,8 +1,8 @@
 public class Parallelogram implements Shape {
-    float a; //основание
+    float a; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     float b;
     float h;
-    float alpha; //угол при основании
+    float alpha; //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
     public Parallelogram(float a, float b, float alpha, float h) {
         this.a = a;
@@ -21,5 +21,10 @@ public class Parallelogram implements Shape {
         if(alpha!=0)
             return a*b*Math.sin(alpha);
         else return a*h;
+    }
+
+    @Override
+    public String ToString() {
+        return super.toString() + "\t" + "area=" + this.area() + "perimeter=" + this.perimeter();
     }
 }
