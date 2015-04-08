@@ -2,10 +2,10 @@
  * Created by IKZN on 07.04.2015.
  */
 public class Rectangle implements Shape{
-    int a;
-    int b;
+    double a;
+    double b;
 
-    public Rectangle(int a,int b) {
+    public Rectangle(double a,double b) {
         this.a = a;
         this.b = b;
     }
@@ -19,5 +19,10 @@ public class Rectangle implements Shape{
     @Override
     public double area() {
         return a*b;
+    }
+
+    @Override
+    public String ToString() {
+        return "\t" + "area rectangle = " + this.area() + " ; perimeter rectangle = " + this.perimeter();
     }
 }
