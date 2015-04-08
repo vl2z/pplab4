@@ -20,4 +20,9 @@ public class Rhombus implements Shape {
             return a*a*Math.sin(alpha);
         else return a*h;
     }
+
+    @Override
+    public String ToString() {
+        return super.toString() + "\t" + "area=" + this.area() + "perimeter=" + this.perimeter();
+    }
 }
