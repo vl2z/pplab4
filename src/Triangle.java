@@ -3,34 +3,35 @@
  */
 public class Triangle implements Shape{
     //стороны
-    int a;
+    double a;
+    double b;
+    double c;
 
-    public int getA() {
+    public double getA() {
         return a;
     }
 
-    public void setA(int a) {
+    public void setA(double a) {
         this.a = a;
     }
 
-    public int getB() {
+    public double getB() {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(double b) {
         this.b = b;
     }
 
-    public int getC() {
+    public double getC() {
         return c;
     }
 
-    public void setC(int c) {
+    public void setC(double c) {
         this.c = c;
     }
 
-    int b;
-    int c;
+
    /* //углы
     int alpha;
     int beta;
@@ -46,7 +47,7 @@ public class Triangle implements Shape{
         this.gamma = gamma;
     }*/
 
-    public Triangle(int a,int b,int c) {
+    public Triangle(double a,double b,double c) {
         this.a=a;
         this.b=b;
         this.c=c;
@@ -54,14 +55,15 @@ public class Triangle implements Shape{
 
     @Override
     public double area() {
-        double p=(a+b+c)/2;
+        double p=(a+b+c)/2.0;
+
         double S=Math.sqrt(p*(p-a)*(p-b)*(p-c));
         return S;
     }
 
     @Override
     public String ToString() {
-        return super.toString() + "\t" + "area triangle=" + this.area() + "perimeter triangle=" + this.perimeter();
+        return "\t" + " area triangle = " + this.area() + "; perimeter triangle = " + this.perimeter();
     }
 
 
